@@ -15,6 +15,7 @@ B = kg*[1 -zg];
 %zeta and wn
 s_hat = 0.2;
 zeta = abs(log(s_hat)) / sqrt(pi^2+(log(s_hat))^2);
+zeta = 1.9*zeta;
 wn = 4.6/(zeta*0.3);
 
 %z-p cancS
@@ -66,14 +67,3 @@ plot(out.u.time, out.u.data);
 hold on, zoom on, grid on,
 xlabel('t'), ylabel('u')
 yline(10, ':r')
-
-
-
-
-
-
-
-
-
-
-
